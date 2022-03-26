@@ -1,0 +1,25 @@
+<html>
+<head>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+	<title>Profile</title>
+</head>
+<body>
+<h2>Profile of: Tigkilis Nikolaos</h2>
+{% for mesg in get_flashed_messages() %}
+<h4>{{ mesg }}</h4>
+{% endfor %}
+<hr>
+<img src="../static/profile.jpg" alt="icon" style="float:left; vertical-align:top; margin:0px 20px" width="100" >
+<p>Informatics University of Piraeus, Greece<br>
+   ICT & Programming ITMO, Saint Petersburg, Russia<br><br>
+   Related Work Experience:<br>
+   Dev Ops, Front-End Dev. 5 Months <a href="https://logstail.com/">Logstail</a><br>
+   E-shop & Website Administrator, 6 months <a href="http://adamsneedlepointcanvas.com.gr">Adams Needle Point Canvas</a>
+</p>
+
+<hr>
+<ul>
+	<li><a href="https://github.com/PGC-2557">Github</a></li>
+</ul>
+</body>
+</html>
